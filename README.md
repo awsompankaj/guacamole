@@ -36,3 +36,22 @@ nginx/nginx
 Username: guacadmin
 
 Password: guacadmin
+
+## To use your own mysql password
+
+  remove files from data directory before running docker compose
+  
+  ```sh
+  #rm -rf ./data/*
+  ```
+  ```sh
+  #docker-compose up -d
+  #docker cp initdb.sql mysql:/
+  #docker exec -it mysql bash
+  bash$ mysql -u root -p
+  password:
+  mysql> use guacamole_db;
+  mysql>source /initdb.sql
+  ```
+  
+  Now mysql container will run with updated mysql password:
