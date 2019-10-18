@@ -3,7 +3,9 @@ Apache Guacamole is an HTML5 application useful for accessing a remote desktop t
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Make sure you have docker installed on your system.
+
+clone git repo
 
 ```bash
 git clone https://github.com/awsompankaj/guacamole.git
