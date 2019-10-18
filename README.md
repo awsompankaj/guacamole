@@ -32,3 +32,7 @@ nginx/nginx
 ## Access
 
 [https://localhost](https://localhost)
+
+Username: guacadmin
+
+Password: guacadmin
