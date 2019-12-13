@@ -41,6 +41,7 @@ services:
          MYSQL_ROOT_PASSWORD: guacamole_root
         networks:
           guacnetwork_compose:
+##      command: mysqld --socket=/tmp/mysqld.sock          <-------------- uncomment if you are using this in windows.
         volumes:
         - ./data:/var/lib/mysql
     nginx:
